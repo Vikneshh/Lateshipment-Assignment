@@ -4,11 +4,11 @@ const Contact = () => {
   const swing = useAnimationObserver("animate__swing");
   return (
     <footer
-      className=" mt-5 col-md-10 col-11 d-flex flex-md-row flex-column justify-content-between align-items-center custom-contact-bg p-4 mx-md-auto rounded-4 "
+      className=" mt-5 col-md-10 col-11 d-flex flex-md-row flex-column justify-content-between align-items-center custom-contact-bg p-4 mx-md-auto rounded-4 flex-column-reverse "
       ref={swing}
     >
       <div className="custom-contact-border p-5 rounded-4 col-md-6 col-12">
-        <h3 className="text-white fw-bold">
+        <h3 className="text-white custom-trap-extraBold">
           See AI-powered <br />{" "}
           <span className="custom-text-gradient">LateShipment.com ONE</span>
           <br /> in action!
@@ -27,20 +27,20 @@ const Contact = () => {
               placeholder="Enter work mail"
             />
             <span className="custom-contact-parent-btn position-absolute  ">
-              <button className="text-white bg-black custom-contact-btn">
+              <button className="text-white bg-black custom-contact-btn black-bg-btn">
                 Book a demo
               </button>
             </span>
           </div>
         </div>
       </div>
-      <div className=" p-5 rounded-5 col-md-5 col-12 bg-transparent position-relative">
-        <h4 className="text-white">
+      <div className=" p-5 rounded-5 col-md-7 col-lg-5 col-12 bg-transparent position-relative">
+        <h4 className="text-white custom-trap-medium">
           Here’s what you can expect in this <br />
           30-min demo
         </h4>
         <div className="d-flex justify-content-center align-items-center mt-4">
-          <div className=" ms-xl-1 ms-lg-4 ms-md-3 ms-sm-2 ms-4">
+          <div className="ms-xxl-1 ms-lg-4 ms-md-3 ms-sm-2 ms-4">
             <img src={pinkTick} alt="Tick" className="" />
           </div>
           <p className="text-white ms-3 custom-inter">

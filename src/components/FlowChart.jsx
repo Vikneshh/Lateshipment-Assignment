@@ -12,13 +12,14 @@ const FlowChart = () => {
   const fadeInLeft = useAnimationObserver("animate__fadeInLeft");
   return (
     <section className="mt-5">
-      <p
-        className="display-3 text-center col-11 col-md-8 mx-auto fw-bold text-white"
+      <h1
+        className="display-2 text-center col-11 col-md-10 mx-auto text-white custom-trap-extraBold"
         ref={fadeInLeft}
       >
-        Your <span className="custom-pink-color">AI-powered </span> Path <br />
+        Your <span className="custom-pink-color">AI-powered </span> Path{" "}
+        <br className="d-md-block d-none" />
         to Post-purchase Success
-      </p>
+      </h1>
 
       <div
         className="w-75 mx-auto text-center mt-5 d-none d-md-block"
@@ -40,7 +41,7 @@ const FlowChart = () => {
             <img src={arrow} alt="Arrow Image" className="custom-rotate" />
           </div>
           <div className="col-11">
-            <img src={card2} alt="Flow chart Image" className="col-6 ms-5" />
+            <img src={card2} alt="Flow chart Image" className="col-4 ms-5" />
           </div>
           <div className="custom-arrow-margin">
             <img src={arrow} alt="Arrow Image" className="custom-rotate" />

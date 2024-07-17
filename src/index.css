@@ -39,26 +39,73 @@
   );
 }
 
+/* Font Family Starts */
+
 @font-face {
-  font-family: "Custom Font";
+  font-family: "Custom Font Regular";
+  src: url("../src/fonts/OpenType-TT/Trap-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Custom Font Medium";
   src: url("../src/fonts/OpenType-TT/Trap-Medium.ttf") format("truetype");
-  font-weight: medium;
-  font-style: medium;
+}
+@font-face {
+  font-family: "Custom Font SemiBold";
+  src: url("../src/fonts/OpenType-TT/Trap-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Custom Font Bold";
+  src: url("../src/fonts/OpenType-TT/Trap-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Custom Font ExtraBold";
+  src: url("../src/fonts/OpenType-TT/Trap-ExtraBold.ttf") format("truetype");
 }
 
 body {
-  font-family: "Custom Font" !important;
+  font-family: "Custom Font Regular" !important;
+}
+
+.custom-trap-regular {
+  font-family: "Custom Font Regular" !important;
+}
+.custom-trap-medium {
+  font-family: "Custom Font Medium" !important;
+}
+.custom-trap-semiBold {
+  font-family: "Custom Font SemiBold" !important;
+}
+.custom-trap-bold {
+  font-family: "Custom Font Bold" !important;
+}
+.custom-trap-extraBold {
+  font-family: "Custom Font ExtraBold" !important;
 }
 
 .custom-inter {
   font-family: "Inter", sans-serif;
 }
 
+/* Font Family Ends */
+
 button:hover {
-  transform: scale(1.1);
+  transform: scale(1.02);
 }
 button {
   font-family: "Inter", sans-serif !important;
+}
+
+.pink-bg-btn:hover {
+  box-shadow: none !important;
+}
+.black-bg-btn:hover {
+  color: rgba(255, 75, 146, 1) !important;
+
+  box-shadow: 5px 5px 3px rgba(255, 255, 255, 0.2);
+}
+.white-bg-btn:hover {
+  color: rgba(255, 75, 146, 1) !important;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 1);
 }
 /* Common Styles End */
 
@@ -68,7 +115,10 @@ button {
 }
 
 .custom-line {
-  border: 2px solid rgb(0, 0, 0);
+  height: 2px;
+  width: 100%;
+  background-color: black !important;
+  color: black !important;
 }
 
 .custom-chevron-font {
@@ -81,13 +131,22 @@ button {
 
 .custom-vr {
   min-width: 3px;
-  margin-top: -25px;
+  margin-top: -8px;
+  background-color: #000000 !important;
 }
 .custom-vr-2 {
   min-width: 3px;
-  margin-top: -28px;
-  height: 80px;
+  margin-top: -8px;
+  background-color: #000000 !important;
 }
+
+@media screen and (width>992px) {
+  .custom-vr,
+  .custom-vr-2 {
+    height: 100px !important;
+  }
+}
+
 .custom-pink-btn {
   background-color: var(--primary-pink) !important;
   box-shadow: 5px 5px 3px rgba(0, 0, 0, 1);
@@ -97,7 +156,7 @@ button {
   font-weight: bold !important;
 }
 
-@media screen and (width>990px) {
+@media screen and (width>=992px) {
   .custom-logo {
     width: 250px;
   }
@@ -111,11 +170,11 @@ button {
   background-color: #000000;
   background-image: linear-gradient(
       to right,
-      rgba(128, 128, 128, 0.1) 1px,
+      rgba(128, 128, 128, 0.1) 2px,
       transparent 1px
     ),
-    linear-gradient(to bottom, rgba(128, 128, 128, 0.1) 1px, transparent 1px);
-  background-size: 20px 20px;
+    linear-gradient(to bottom, rgba(128, 128, 128, 0.1) 2px, transparent 1px);
+  background-size: 60px 60px;
   color: white;
   height: 100%;
 }
@@ -165,7 +224,7 @@ button {
 /* Brand Style Start */
 
 .custom-brand-logo {
-  width: 120px;
+  width: 100px;
 }
 
 .custom-testimonial-quotes {
@@ -191,6 +250,16 @@ button {
   position: relative;
   top: -20px;
   left: 0px;
+}
+
+.custom-quotes-position {
+  position: absolute;
+  top: -10px;
+  right: 0px;
+}
+
+.custom-lady-position {
+  margin-top: -45px;
 }
 
 .img-container {
@@ -331,6 +400,12 @@ button {
   }
 }
 
+.custom-integrations-logo {
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+}
+
 /* Integrations style End*/
 
 /* Get Started Style Start */
@@ -343,6 +418,13 @@ button {
 .custom-getStarted-hr {
   background: var(--horizontal-line-gradient) !important;
   width: 250px;
+  height: 1px;
+  margin: 0px auto;
+}
+
+.custom-getStarted2-hr {
+  background: var(--horizontal-line-gradient) !important;
+  width: 450px;
   height: 1px;
   margin: 0px auto;
 }
