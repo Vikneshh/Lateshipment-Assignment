@@ -40,7 +40,7 @@ const Brands = () => {
     <section className="pt-5 p-3">
       <h1 className="display-4 text-center col-10 col-md-8 mx-auto text-white custom-trap-extraBold">
         Trusted by <span className="custom-pink-color">4500 +</span> e-commerce{" "}
-        <br className="d-md-block d-none" /> brands globally
+        <br className="d-xxl-block d-none" /> brands globally
       </h1>
 
       <div className="img-container col-12 mx-auto">
@@ -92,19 +92,19 @@ const Brands = () => {
             <p className="text-white fs-5 custom-inter col-10">
               LateShipment.com has helped us automate shipping refunds for
               service <br className="d-none d-xl-block" /> by FedEx and DHL
-              through and through.LateShipment.com has helped us{" "}
-              <br className="d-none d-md-block" /> automate shipping refunds for
+              through and through LateShipment.com has helped us{" "}
+              <br className="d-none d-xl-block" /> automate shipping refunds for
               service failures refunds refunds.
             </p>
             <div>
               <img src={quotes} alt="" className="custom-quotes-position" />
             </div>
           </div>
-          <div className="d-flex justify-content-between align-items-center">
-            <p className="custom-pink-color fs-5 custom-inter fw-semibold">
+          <div className="d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <p className="custom-pink-color fs-5 custom-inter fw-semibold w-100 w-md-auto text-center text-md-start mb-3 mb-md-0 custom-testimonial-name">
               Keisha Celene, Director of Customer Success
             </p>
-            <div>
+            <div className="align-self-end">
               <img src={branch} alt="" className="me-4 " />
             </div>
           </div>

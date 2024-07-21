@@ -23,7 +23,7 @@ const Integration = () => {
         className="display-2 text-center col-11 col-md-10 mx-auto text-white custom-trap-extraBold"
         ref={fadeInLeft}
       >
-        Pre-built integrations <br /> with
+        Pre-built integrations <br className="d-lg-block d-none" /> with
         <span className="custom-pink-color">1200+ </span> carriers and apps
       </h1>
 
@@ -57,7 +57,7 @@ const Integration = () => {
           View All Integrations
         </button>
         <span className="custom-gradient-wrapper rounded-4 m-3 ">
-          <button className="text-white  px-4 py-2 fw-bold bg-black rounded-4 custom-inter black-bg-btn">
+          <button className="text-white  px-4 py-2 fw-bold bg-black rounded-4 custom-inter black-bg-btn mt-2">
             Talk to an Intergrations expert
           </button>
         </span>

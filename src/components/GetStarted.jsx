@@ -11,14 +11,14 @@ const GetStarted = () => {
         className="display-2 text-center col-12 col-md-10 mx-auto text-white custom-trap-extraBold"
         ref={fadeInRight}
       >
-        Scalable and reliable tech for <br className="d-md-block d-none" />{" "}
+        Scalable and reliable tech for <br className="d-xxl-block d-none" />{" "}
         businesses of all sizes
       </h1>
       <div
-        className="d-flex justify-content-between align-items-center custom-metrics-bg col-md-10 col-11 mx-auto flex-md-row flex-column text-center mt-5 rounded-5"
+        className="d-flex justify-content-between align-items-center custom-metrics-bg col-md-11 col-12 mx-auto flex-md-row flex-column text-center mt-5 rounded-5"
         ref={backInUp}
       >
-        <div className=" d-flex justify-content-between flex-column col-md-5 col-11">
+        <div className=" d-flex justify-content-between flex-column col-md-4 col-11">
           <div className="col-md-12 col-11">
             <span className="fs-2 mx-2 custom-text-gradient d-inline-block mt-5 custom-trap-bold">
               220 Million+
@@ -46,34 +46,36 @@ const GetStarted = () => {
         </div>
         <div className="custom-getStarted-vr d-none d-md-block"></div>
         <div className="custom-getStarted2-hr d-block d-md-none my-4"></div>
-        <div className="col-md-5 col-11">
+        <div className="col-md-6 col-11">
           <h4 className="fs-2 mx-2 custom-text-gradient d-inline-block mt-2 custom-trap-bold">
-            Our Data Privacy and <br /> Security Standards
+            Our Data Privacy and <br className="d-md-block d-none" /> Security
+            Standards
           </h4>
           <div className="d-flex flex-md-row flex-column justify-content-between m-3 align-items-center ">
-            <div className="d-flex justify-content-between flex-md-column flex-row my-3 my-md-0 align-items-center">
-              <div>
-                <img src={shield} alt="" className="col-md-8 col-7" />
+            <div className="d-flex justify-content-between flex-md-column  my-1 my-md-0 align-items-center custom-arrangement">
+              <div className="ms-sm-5 ms-md-0 ">
+                <img src={shield} alt="" className="col-md-8 col-7 " />
               </div>
-              <p className="text-white mt-3 custom-inter">
-                Enterprise-grade <br />
+              <p className="text-white mt-3 custom-inter ms-sm-5 ms-md-0 ">
+                Enterprise-grade <br className="d-md-block d-none" />
                 Data Security
               </p>
             </div>
-            <div className="d-flex justify-content-between flex-md-column flex-row my-3 my-md-0 align-items-center">
-              <div>
+            <div className="d-flex justify-content-between flex-md-column  my-1 my-md-0 align-items-center custom-arrangement">
+              <div className="">
                 <img src={gdpr} alt="" className="col-md-9 col-7" />
               </div>
-              <p className="text-white mt-3 custom-inter">
-                General Data <br /> Protection Regulation
+              <p className="text-white mt-3 custom-inter ms-sm-1 ms-md-0">
+                General Data <br className="d-md-block d-none" /> Protection
+                Regulation
               </p>
             </div>
-            <div className="d-flex justify-content-between flex-md-column flex-row my-3 my-md-0 align-items-center">
+            <div className="d-flex justify-content-between flex-md-column  my-1 my-md-0 align-items-center custom-arrangement">
               <div>
                 <img src={aws} alt="" className="col-md-6 col-7" />
               </div>
-              <p className="text-white mt-3 custom-inter">
-                Secure Hosting <br /> Platform
+              <p className="text-white mt-1 custom-inter ms-sm-4 ms-md-0">
+                Secure Hosting <br className="d-md-block d-none" /> Platform
               </p>
             </div>
           </div>

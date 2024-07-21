@@ -23,14 +23,15 @@ const Hero = () => {
           Post-Purchase
         </h1>
         <h3 className="fs-4 col-11 col-md-8 mx-auto text-center custom-inter fw-medium">
-          Your AI platform to achieve high-value outcomes with your <br />{" "}
-          e-commerce store’s shipping, delivery and returns operations
+          Your AI platform to achieve high-value outcomes with your{" "}
+          <br className="d-lg-block d-none" /> e-commerce store’s shipping,
+          delivery and returns operations
         </h3>
         <div className="text-center mt-5">
-          <button className="btn text-black bg-white  mx-3 rounded-4 px-4 py-2 fw-bold white-bg-btn">
+          <button className="btn text-black bg-white  mx-3 rounded-4 px-4 py-2 fw-bold white-bg-btn custom-bottom-margin">
             Get Started
           </button>
-          <span className="custom-gradient-wrapper rounded-4 m-3">
+          <span className="custom-gradient-wrapper rounded-4 m-3 ">
             <button className="text-white  px-4 py-2 fw-bold bg-black rounded-4 black-bg-btn">
               Product Tour
             </button>

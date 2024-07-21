@@ -1,11 +1,12 @@
-import flowChart from "../assets/flow.png";
-import card1 from "../assets/card1.png";
-import card2 from "../assets/card2.png";
-import card3 from "../assets/card3.png";
-import card4 from "../assets/card4.png";
-import card5 from "../assets/card5.png";
-import arrow from "../assets/Arrow.png";
-import rightArrow from "../assets/rightarrow.png";
+import Optimisation from "./Optimisation";
+import PPJOrchestra from "./PPJOrchestra";
+import Shipping from "./Shipping";
+import Unify from "./Unify";
+import Decision from "./Decision";
+import rightArrow from "../assets/flowchart-right.png";
+import leftArrow from "../assets/flowchart-left.png";
+import downArrow from "../assets/flowchart-down.png";
+import combinedArrow from "../assets/flowchart-combined-arrow.png";
 import useAnimationObserver from "../utils/useAnimationObserver";
 const FlowChart = () => {
   const rollIn = useAnimationObserver("animate__rollIn");
@@ -13,7 +14,7 @@ const FlowChart = () => {
   return (
     <section className="mt-5">
       <h1
-        className="display-2 text-center col-11 col-md-10 mx-auto text-white custom-trap-extraBold"
+        className="display-2 text-center col-xs-12 col-11 col-md-10 mx-auto text-white custom-trap-extraBold"
         ref={fadeInLeft}
       >
         Your <span className="custom-pink-color">AI-powered </span> Path{" "}
@@ -22,43 +23,41 @@ const FlowChart = () => {
       </h1>
 
       <div
-        className="w-75 mx-auto text-center mt-5 d-none d-md-block"
+        className="containers text-white custom-responsive-alteration"
         ref={rollIn}
       >
-        <img
-          src={flowChart}
-          alt="Flow chart Image"
-          className="custom-img-flow"
-        />
-      </div>
-
-      <div className=" mx-auto text-center mt-5 d-block d-md-none" ref={rollIn}>
-        <div>
-          <div className="col-11">
-            <img src={card1} alt="Flow chart Image" className="col-8 ms-5" />
-          </div>
-          <div className="custom-arrow-margin">
-            <img src={arrow} alt="Arrow Image" className="custom-rotate" />
-          </div>
-          <div className="col-11">
-            <img src={card2} alt="Flow chart Image" className="col-4 ms-5" />
-          </div>
-          <div className="custom-arrow-margin">
-            <img src={arrow} alt="Arrow Image" className="custom-rotate" />
-          </div>
-          <div className="col-11">
-            <img src={card3} alt="Flow chart Image" className="col-8 ms-5" />
-          </div>
-          <div className="custom-arrow-margin">
-            <img src={arrow} alt="Arrow Image" className="custom-rotate" />
-          </div>
-          <div className="col-11">
-            <img src={card4} alt="Flow chart Image" className="col-4 ms-5" />
-            <span className="custom-arrow-margin ">
-              <img src={rightArrow} alt="Arrow Image" />
-            </span>
-            <img src={card5} alt="Flow chart Image" className="col-4 m-1" />
-          </div>
+        <div className="item item-1 cards">
+          <Unify />
+        </div>
+        <div className="item item-2">
+          <img src={rightArrow} alt="right arrow" className="mt-5" />
+        </div>
+        <div className="item item-3 cards">
+          <Decision />
+        </div>
+        <div className="item item-4">
+          <img src={combinedArrow} alt="combined arrow" className="mt-5" />
+        </div>
+        <div className="item item-5 cards">
+          <PPJOrchestra />
+        </div>
+        <div className="item item-6">
+          <img src={downArrow} alt="down arrow" />
+        </div>
+        <div className="item item-7"></div>
+        <div className="item item-8"></div>
+        <div className="item item-9"></div>
+        <div className="item item-10 cards">
+          <Shipping />
+        </div>
+        <div className="item item-11">
+          <img src={leftArrow} alt="left arrow" />
+        </div>
+        <div className="item item-12 cards">
+          <Optimisation />
+        </div>
+        <div className="item item-13">
+          <img src={leftArrow} alt="left arrow" />
         </div>
       </div>
     </section>
